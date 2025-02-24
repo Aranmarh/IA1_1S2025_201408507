@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Árbol Genealógico - Prolog</title>
+  <script src="./tau-prolog.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #4C591D;
+      color: #403832;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      background: #98A633;
+      padding: 25px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    h1 {
+      color: #403832;
+      border-bottom: 2px solid #BFBFBF;
+      padding-bottom: 5px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #403832;
+      margin-top: 10px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 5px;
+    }
+
+    input, textarea {
+      width: 90%;
+      padding: 12px;
+      border: 1px solid #BFBFBF;
+      border-radius: 5px;
+      margin-top: 8px;
+      font-size: 14px;
+      background: #737373;
+      color: white;
+      display: flex;
+      align-items: center;
+    }
+
+    button {
+      background-color: #403832;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s;
+      margin-top: 10px;
+      width: 78%;
+    }
+
+    button:hover {
+      background-color: #737373;
+    }
+
+    textarea {
+      resize: none;
+      height: 150px;
+      width: 90%;
+    }
+
+    #queryInput {
+    width: 90%;
+    height: 30px;
+    margin-top: 10px;
+  }
+
+
+    #output {
+    width: 90%;
+    height: 150px;
+    margin-top: 10px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #BFBFBF;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Árbol Genealógico - Prolog</h1>
+
+    <label for="fileInput">Cargar archivo de código Prolog:</label>
+    <input type="file" id="fileInput" accept=".pl">
+
+    <h2>Consulta en Prolog</h2>
+    <input type="text" id="queryInput" placeholder="Ingrese su consulta en Prolog">
+    <button onclick="runQuery()">Ejecutar</button>
+
+    <h2>Salida</h2>
+    <textarea id="output" readonly></textarea>
+
+ 
+
+    <div class="footer">
+     201408507 | José Ignacio Martinez Hernandez
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
